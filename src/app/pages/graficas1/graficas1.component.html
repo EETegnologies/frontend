@@ -1,0 +1,23 @@
+<div class="row"><!--Inicio Row-->
+    <div class="col-6">
+        <app-dona titulo="Ventas"></app-dona>
+    </div><!--Fin col-6-->
+
+    <div class="col-6">
+        <app-dona [labels]="labels1"
+                [data]="data1"
+                title="Compras">
+        </app-dona>
+    </div>
+</div><!--Fin row-->
+
+<div class="row"><!--Inicio Row-->
+    <div class="col-6">
+        <app-dona></app-dona>
+    </div>
+    <div class="col-6">
+        <app-dona title="Compras 2"></app-dona>
+    </div>
+
+</div><!--Fin row-->
+
