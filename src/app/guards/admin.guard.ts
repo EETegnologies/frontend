@@ -20,11 +20,21 @@ export class AdminGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {
     
-      if(this.usuarioService.role === 'ADMIN_ROLE'){
+      if(this.usuarioService.role === 'ADMIN_ROLE')
+      {
+        //Lo dejo entrar
         return true;
-      }else{
+
+      }
+      else
+      {
+      
+        //No lo dejo entrar
+        //Lo direccionamos al dashboard
+        //Si lo sacamos al login purar el login y el menu
         this.router.navigateByUrl('/dashboard');
         return false;
+
       }
       //return (this.usuarioService.role === 'ADMIN_ROLE') ? true : false;
       

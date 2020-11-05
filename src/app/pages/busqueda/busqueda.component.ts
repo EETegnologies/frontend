@@ -41,10 +41,6 @@ export class BusquedaComponent implements OnInit {
         } )
   }
 
-  abrirMedico( medico : Medico ){
-
-    
-
-  }
+  
 
 }

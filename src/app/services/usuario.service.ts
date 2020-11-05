@@ -74,7 +74,8 @@ export class UsuarioService {
 
 
   guardarLocalStorage( token : string , menu : any ){
-  
+
+    //En el localstorage solo podemos grabar strings
     localStorage.setItem('token', token );
     localStorage.setItem('menu', JSON.stringify(menu));
 
