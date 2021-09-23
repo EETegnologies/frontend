@@ -8,22 +8,19 @@ import { PagesComponent } from './pages.component';
 
 
 
-
-
-
 const routes: Routes = [
-   
-    {
-        path : 'dashboard', 
+
+    { 
+        path: 'dashboard', 
         component: PagesComponent,
         canActivate: [ AuthGuard ],
-        loadChildren: () => import('./child-routes.module').then( m=> m.ChildRoutesModule )
-      },
-        
+        canLoad: [ AuthGuard ],
+        loadChildren: () => import('./child-routes.module').then( m => m.ChildRoutesModule )
+    },
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
+    imports: [ RouterModule.forChild(routes) ],
+    exports: [ RouterModule ]
 })
 export class PagesRoutingModule {}

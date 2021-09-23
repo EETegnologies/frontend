@@ -5,7 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Modulos
 import { SharedModule } from '../shared/shared.module';
-import { ComponentsModule } from './../components/components.module';
+//import { ComponentsModule } from './../components/components.module';
+import { ComponentsModule } from '../components/components.module';
 
 import { PipesModule } from './../pipes/pipes.module';
 
@@ -33,7 +34,14 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     Graficas1Component,    
     PagesComponent, 
     AccountSettingsComponent, 
-    PromesasComponent, RxjsComponent, PerfilComponent, UsuariosComponent, HospitalesComponent, MedicosComponent, MedicoComponent, BusquedaComponent
+    PromesasComponent, 
+    RxjsComponent, 
+    PerfilComponent, 
+    UsuariosComponent, 
+    HospitalesComponent, 
+    MedicosComponent, 
+    MedicoComponent, 
+    BusquedaComponent
   ],
   exports: [
     DashboardComponent,
